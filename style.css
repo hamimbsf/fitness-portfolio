@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 body {
-  background-color: rgba(0, 0, 0, 0.873);
+  background-color: black;
 }
 * {
   margin: 0;
@@ -12,9 +12,10 @@ body {
 /* styles header */
 header {
   width: 100%;
-  margin-top: 3.1rem;
+  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+  padding-top: 3.1rem;
   .hero-section {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 2.8rem;
     & h1 {
@@ -33,13 +34,14 @@ span {
 }
 /* Navbar styles */
 nav {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & h2 {
+  & h2, i {
     font-size: 2.2rem;
+    color: rgb(230, 83, 60);
   }
   & .fa-bars {
     font-size: 26px;
@@ -50,7 +52,7 @@ nav {
 }
 /* styles hero section */
 .btn-box {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 1.8rem;
   display: flex;
@@ -70,14 +72,16 @@ nav {
   }
 }
 .position {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
   & img {
-    width: 100%;
+    width: 80%;
     height: 530px;
+    display: block;
     margin: 0 auto;
     margin-bottom: 20px;
+    filter: brightness(85%);
   }
   & .position-top {
     width: 145.91px;
@@ -157,7 +161,199 @@ h3 {
     align-items: center;
   }
 }
+.section-three {
+  width: 80%;
+  height: 480px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 18px;
+  background: rgba(48, 48, 48, 0.54);
+  & .banner-1 {
+    width: 90%;
+    margin: 0 auto;
+    & h2 {
+      font-size: 2rem;
+      padding-top: 1.9rem;
+    }
+    & .btn-3 {
+      display: block;
+      width: 287px;
+      height: 54px;
+      border-radius: 42px;
+      border: none;
+      margin-top: 24px;
+    }
+  }
+}
+.banner-2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  & img {
+    width: 100%;
+    height: 170px;
+    border-radius: 18px;
+  }
+}
+/* section 4 */
+.section-four {
+    width: 100%;
+    margin-top: 66px;
+    background: rgba(48, 48, 48, 0.54);
+    & .input-box{
+      width: 80%;
+      margin: 0 auto;
+      & h3{
+        margin-bottom: 14px;
+        font-size: 1rem;
+      }
+      & p{
+        margin-bottom: 34px;
+        font-size: 14px;
+      }
+      & .input-data-box , .input{
+        width: 48%;
+        height: 48px;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      & #selection{
+        width: 100%;
+        height: 48px;
+        margin-top: 12px;
+      }
+    }
+  }
+  .table-box{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 42px;
+    & h3{
+      font-size: 1rem;
+      padding-top: 34px;
+      margin-bottom: 23px;
+    }
+    /* & table{} */
+    & table{
+      border: none;
+      
+    }
+    & th{
+      text-align: left;
+      padding: 10px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    & td{
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      padding: 10px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+  
+.input-box-1, .input-box-2{
+  display: flex;
+  gap: 4%;
+  margin-top: 12px;
+}
+.btn-4{
+  width: 224px;
+  height: 54px;
+  border: none;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  font-size: 18px;
+  margin: 50px 0;
+
+}
+::placeholder, select{
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.5)
+}
+.section-five {
+  width: 80%;
+  margin: 0 auto;
+  & .section-title {
+    margin-top: 4rem;
+    & h2 {
+      font-size: 2rem;
+    }
+    & p {
+      font-size: 14px;
+      margin-top: 14px;
+    }
+  }
+}
+.team {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: rgba(48, 48, 48, 0.54);
+  margin-top: 37px;
+  & img {
+    width: 100%;
+    height: 272px;
+    border-radius: 18px;
+    filter: brightness(75%);
+  }
+}
+.trainer {
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  & .position-bottom {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+  }
+}
+footer {
+  background-color: rgba(48, 48, 48, 0.54);
+  margin-top: 66px;
+  & .footer-title, .program-box {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 44px;
+    & i {
+      color: rgb(230, 83, 60);
+      font-size: 70px;
+    }
+    & p{
+      margin: 20px 0;
+      font-size: 14px;
+    }
+  }
+  & .program-box{
+    & h3{
+      font-size: 2rem;
+      margin-bottom: 39px;
+    }
+    & li{
+      list-style-type: none;
+      margin-bottom: 20px;
+    }
+    & a{
+      text-decoration: none;
+    }
+  }
+  & hr{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 72px;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+  }
+  & p{
+    font-size: 20px;
+    padding: 41px 0;
+  }
+}
+
 /* shared styles */
+.hidden{
+  display: none;
+}
 .color-1 {
   background-color: rgb(230, 83, 60);
 }
@@ -186,6 +382,9 @@ h3 {
       border-radius: 39px;
       height: 46px;
       width: 465px;
+      & a{
+        text-decoration: none;
+      }
       & .home-btn {
         width: 92px;
         height: 38px;
@@ -198,11 +397,10 @@ h3 {
     }
   }
   .section-one {
-    width: 84%;
+    width: 89%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    gap: 280px;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
     & .section-one-box-one {
@@ -253,6 +451,83 @@ h3 {
     & .section-two-box-two {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  /* Section 3 */
+  .section-three {
+    width: 80%;
+    height: 371px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border-radius: 18px;
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .banner-1 {
+      width: 45%;
+      margin: 0 auto;
+      margin: 0 2rem;
+      & h2 {
+        font-size: 3rem;
+      }
+      & .btn-3 {
+        margin-top: 34px;
+      }
+    }
+  }
+  .banner-2 {
+    width: 45%;
+    margin: 0 auto;
+    margin: 0 2rem;
+    & img {
+      width: 100%;
+      height: 312px;
+      border-radius: 18px;
+    }
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 58px;
+    margin-bottom: 88px;
+    & .trainer {
+      /* padding: 0; */
+      padding: 20px 0;
+    }
+  }
+  .hidden{
+    display: unset;
+  }
+/* section 4 */
+.calculate-box{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  & .table-box, .input-box{
+    margin-top: 50px;
+  }
+}
+.table-box{
+  & h3{
+    font-size: 28px;
+    padding-bottom: 52px;
+  }
+}
+/* Section seven */
+  .section-seven{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 153px;
+    margin-bottom: 79px;
+    & .footer-title{
+      & p{
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+      }
     }
   }
 }
