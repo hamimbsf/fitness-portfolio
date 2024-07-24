@@ -236,7 +236,7 @@ h3 {
     }
     /* & table{} */
     & table{
-      border: none;
+      border-collapse: collapse;
       
     }
     & th{
