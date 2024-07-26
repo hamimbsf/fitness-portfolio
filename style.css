@@ -161,6 +161,7 @@ h3 {
     align-items: center;
   }
 }
+/* section three */
 .section-three {
   width: 80%;
   height: 480px;
@@ -185,11 +186,48 @@ h3 {
     }
   }
 }
+/* added style for section 2 and 6 for banner 2 img and iframe */
 .banner-2 {
   width: 90%;
   margin: 0 auto;
   margin-top: 2rem;
   & img {
+    width: 100%;
+    height: 170px;
+    border-radius: 18px;
+  }
+}
+/* section six */
+.section-six {
+  width: 80%;
+  height: 520px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 18px;
+  background: rgba(48, 48, 48, 0.54);
+  & .banner-1 {
+    width: 90%;
+    margin: 0 auto;
+    & h2 {
+      font-size: 2rem;
+      padding-top: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    & .btn-3 {
+      display: block;
+      width: 287px;
+      height: 54px;
+      border-radius: 42px;
+      border: none;
+      margin-top: 24px;
+    }
+  }
+}
+.iframe-box {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+  & iframe {
     width: 100%;
     height: 170px;
     border-radius: 18px;
@@ -453,8 +491,8 @@ footer {
       grid-template-columns: repeat(4, 1fr);
     }
   }
-  /* Section 3 */
-  .section-three {
+  /* Section 3 & section 6 */
+  .section-three, .section-six {
     width: 80%;
     height: 371px;
     margin: 0 auto;
@@ -480,13 +518,22 @@ footer {
     width: 45%;
     margin: 0 auto;
     margin: 0 2rem;
-    & img {
+    & img , iframe {
       width: 100%;
       height: 312px;
       border-radius: 18px;
     }
   }
-
+  .iframe-box {
+    width: 45%;
+    margin: 0 auto;
+    margin: 0 2rem;
+    & iframe {
+      width: 100%;
+      height: 312px;
+      border-radius: 18px;
+    }
+  }
   .team {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
